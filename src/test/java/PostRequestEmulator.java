@@ -31,8 +31,8 @@ public class PostRequestEmulator {
         builder.addPart("data", bin);
         HttpEntity entity = builder.build();
         httpPost.setEntity(entity);
-//        HttpResponse response = client.execute(httpPost);
-//        String responseString = new BasicResponseHandler().handleResponse(response);
-//        System.out.println(responseString);
+        HttpResponse response = client.execute(httpPost);
+        String responseString = new BasicResponseHandler().handleResponse(response);
+        System.out.println(responseString);
     }
 }

@@ -19,12 +19,12 @@ public class LogUploadServlet extends HttpServlet {
     private String savePath;
     @Override
     public void init() throws ServletException {
-        savePath = "/Users/kirk/Developer/utils/filebeat";
+        savePath = "/home/Developer/utils/filebeat";
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-
+        System.err.println(savePath);
         File fileSaveDirectory = new File(savePath);
         if (!fileSaveDirectory.exists()) {
             fileSaveDirectory.mkdir();
