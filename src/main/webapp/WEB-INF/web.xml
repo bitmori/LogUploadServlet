@@ -1,0 +1,16 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <context-param>
+        <param-name>file-upload-path</param-name>
+        <param-value>
+            /Users/kirk/Developer/utils/filebeat
+        </param-value>
+        <description>Location to store uploaded file</description>
+    </context-param>
+
+</web-app>

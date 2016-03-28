@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  logshredder:
+    image: logshredder
+    container_name: logshredder
+    ports:
+      - '8080:8080'
+    volumes:
+      - ../target/LogUploadServlet.war:/usr/local/tomcat/webapps/logshredder.war
